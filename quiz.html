@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QIUZ-APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="pictures/logo-removebg.png" alt="img" id="img" class="img">
+    <h1 id="title">Web & Mobile Hybrid App Development</h1>
+    <h1 id="title">Online Quiz App</h1>
+<div id="timer_1" class="timer">
+    <h4 class="timer_h">
+        <span class="timer_abc" id="min"></span> : <span class="timer_abc"  id="sec"></span>
+    </h4>
+</div>
+    <!-- quiz-container -->
+    <div id="quiz-container">
+        <!-- question container -->
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ol type="A">
+                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+            </ol>
+            <h4 style="color: black;" id="stat"></h4>
+        </div>
+
+        <div style="margin-top: -50px !important;" class="buttons">
+            <button type="button" class="next">Next</button>
+
+        </div>
+
+    </div>
+
+    <!-- scoreboard section -->
+    <div id="scoreboard">
+        <img src="pictures/logo-removebg.png" alt="">
+        <h2 id="score-title">Your Score</h2>
+        <h2 id="score"></h2>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+    </div>
+
+    <!-- answers section -->
+    <div style="overflow-y: auto; margin-bottom: 30px;" id="answerBank">
+        <h2>Answers :</h2>
+        <ol type="1" id="answers">
+
+        </ol>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+    </div>
+    
+    <!-- javascript file source -->
+    <script src="app.js"></script>
+</body>
+</body>
+
+</html>

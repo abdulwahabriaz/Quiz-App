@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #2F4F4F;
+    /* overflow: hidden; Hide scrollbars */
+}
+
+img{
+    width: 10.4rem;
+    height: 6rem;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.img{
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    z-index: 1;
+}
+
+#title{
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 2rem;
+    color: rgb(49,70,7);
+    background: rgba(105,224,90,0.55);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#quizBank{
+    height: 350px;
+    width: 25%;
+    background: #00008B;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#quiz-container {
+    background-color: #00008B;
+    width: 35%;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.questions{
+    margin-top: 30px;
+    width: 90vw;
+    padding: 2rem;
+    cursor: default;
+    border-radius: 1rem;
+}
+#question{
+    margin-bottom: 1rem;
+    width: 350px;
+}
+.option{
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 20px;
+    width: 350px;
+    margin-top: 12px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #00008B;
+    /* margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem blue;
+    width: 15rem;
+    background: lightblue;
+    border-radius: 1rem; */
+}
+.option:hover{
+    color: black;
+}
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: rgb(1,73,73);
+}
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+#answer{
+    margin-top: 2.5rem;
+}
+#stat{
+    margin-top: 1.5rem;
+    color: rgb(6,17,168);
+}
+.buttons{
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    color: black;
+    background: rgba(161,177,19,0.82);
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+button:active{
+    background: lavender;
+}
+button:hover{
+    font-style: italic;
+    box-shadow: 2px 3px #888888;
+}
+#scoreboard{
+    width: 25%;
+    background-color: #00008B;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    display: none;
+    border-radius: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#answerBank{
+    width: 30rem;
+    background: rgba(230,230,250,0.77);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 3rem;
+    display: none;
+    border-radius: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#score-title{
+    margin: 1rem 0;
+}
+#score-btn,#check-answer{
+    margin-top: 1rem;
+}
+#score{
+    font-size: 2.5rem;
+}
+#answerBank li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+#answers{
+    margin-top: 1rem;
+}
+
+
+.timer_h {
+    display: flex;
+    position: fixed !important;
+    top: 25px !important;
+    right: 35px !important;
+    font-size: 4vw !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: bolder !important;
+}
